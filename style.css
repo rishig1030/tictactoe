@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background-color: #548687;
+    background-color: #EFEFEF;
     text-align: center;
     display: flex;
     align-items: center;
@@ -52,34 +52,34 @@ body{
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     font-size: 8vmin;
-    color: #010101;
+    color: #070707;
     background-color: #ffffc7;
 }
 #reset-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #3454D1;
     color: #ffffff;
     border-radius: 1rem;
 }
 .seeresult{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #3454D1;
     color: #ffffff;
     border-radius: 1rem;
 }
 #home-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #3454D1;
     color: #ffffff;
     border-radius: 1rem;
 }
 #home2-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #3454D1;
     color: #ffffff;
     border-radius: 1rem;
 }
@@ -87,18 +87,28 @@ body{
 .start-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #3454D1;
     color: #ffffff;
     border-radius: 1rem;
 }
 #new-btn{
     padding: 1rem;
     font-size: 1.25rem;
-    background-color: #191913;
+    background-color: #3454D1;
     color: #ffffff;
     border-radius: 1rem;
 }
-.gameset{
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13vmin;
+    width:100vw;
+    background-color: #3454D1;
+
+}
+
+.gameset {
     
     display: flex;
     justify-content: center;
