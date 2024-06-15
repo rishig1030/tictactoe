@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="body0">
+        <div class="gameset" style="display: flex; flex-direction: column;">
+            <img class = "image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKNKaKsJoO93z-1rtHLaDh1yxVQsHn5SuKLQ&s">
+
+                <button class="start-btn">Start Game</button>
+                
+            
+        </div>
+    </main>
+    <main class="body1 hidden">
+        <h1>Tic Tac Toe</h1>
+        
+        
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <div class="gameset">
+            <button id="reset-btn">Reset Game</button>
+            <button id="home-btn">Home Screen</button>
+        </div>
+    </main>
+    <main class="body2 hidden">
+        <div class="winner" id="winner">Winner</div>
+        
+        <button id="new-btn">New Game</button>
+        <button class="seeresult">Review</button>
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
