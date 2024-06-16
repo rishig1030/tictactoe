@@ -27,6 +27,7 @@ startgame.addEventListener("click",()=>{
         turnO = true;
         boxes[i].disabled = false;
     }
+    win = false;
 })
 
 //player X and player O
@@ -57,7 +58,7 @@ const showWinner = (winner) =>{
     if(winner === "No One") msg.innerText = 'Its a Draw';
     else {
         win = true;
-    msg.innerText = 'Congratulations, Winner is ' + winner ;
+        msg.innerText = 'Congratulations, Winner is ' + winner ;
     }
     body1.classList.add("hidden");
     body2.classList.remove("hidden");
@@ -108,4 +109,5 @@ reset.addEventListener("click",()=>{
         turnO = true;
         boxes[i].disabled = false; 
     }
+    win = false;
 })
