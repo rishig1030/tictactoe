@@ -46,16 +46,35 @@ boxes.forEach((box)=>{
         }
         box.disabled = true;
         checkwinner();
+        checkdraw();
     })
 })
 
+
+
 const showWinner = (winner) =>{
+    if(winner === "No One") msg.innerText = 'Its a Draw';
+    else 
     msg.innerText = 'Congratulations, Winner is ' + winner ;
     body1.classList.add("hidden");
     body2.classList.remove("hidden");
 }
+const checkdraw = () => {
+    let stop = true;
+    for(let i=0;i<9;i++){
+        let pos1 = boxes[i].innerText;
+        if(pos1 == ""){
+            stop = false;
+            break;
+        }
+    }
+    if(stop === true){
+        showWinner("No One");
+    }
+}
 
 const checkwinner = () => {
+
     for (let pattern of winCombination){
         let pos1 = boxes[pattern[0]].innerText;
         let pos2 = boxes[pattern[1]].innerText;
