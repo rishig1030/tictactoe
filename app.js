@@ -97,6 +97,7 @@ const checkwinner = () => {
                     body1.classList.remove("hidden");
                     body2.classList.add("hidden");
                 }
+                win = false;
             })
             break;
         }
