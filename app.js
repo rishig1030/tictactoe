@@ -46,16 +46,19 @@ boxes.forEach((box)=>{
         }
         box.disabled = true;
         checkwinner();
+        if(!win)
         checkdraw();
     })
 })
 
 
-
+let win = false;
 const showWinner = (winner) =>{
     if(winner === "No One") msg.innerText = 'Its a Draw';
-    else 
+    else {
+        win = true;
     msg.innerText = 'Congratulations, Winner is ' + winner ;
+    }
     body1.classList.add("hidden");
     body2.classList.remove("hidden");
 }
